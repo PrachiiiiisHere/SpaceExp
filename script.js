@@ -16,3 +16,5 @@ function revealSections(){
 }
 
 window.addEventListener("scroll", revealSections);
+revealSections();
+
