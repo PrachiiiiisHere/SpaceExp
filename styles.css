@@ -1,0 +1,220 @@
+html{
+    scroll-behavior:smooth;
+    background:black;
+    overscroll-behavior:none;
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    min-height: 100vh;
+    color:aliceblue;
+    background-image:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.85)), url("images/Glow\ Black\ And\ White\ GIF\ by\ xponentialdesign.gif");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Orbitron", sans-serif;
+    
+    
+
+}
+#myLogo {
+    margin-top: 10px;
+    width:150px;
+    filter: brightness(1.5) drop-shadow(0 0 8px white);
+    /*mix-blend-mode: multiply; /* removes or blends bg*/
+    /*filter: invert(); /* this is to change black logo into colors*/
+
+
+
+}
+
+.head,.applyPage,.applyForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size:48px;
+    letter-spacing: 4px;
+}
+.exploreTitle{
+    text-align:center;
+    font-size:36px;
+    margin:80px 0 40px 0;
+}
+
+.btn{
+    font-family: "Orbitron", sans-serif;
+    color:black;
+    padding:18px 30px;
+    border-radius: 20px;
+    background-color: azure;
+    font-size:22px;
+    cursor:pointer;
+
+}
+.btn:hover{
+    background-color: rgb(168, 222, 222);
+    transform: scale(1.05);
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+.underline{
+    border-bottom: 6px solid aliceblue;
+    cursor:pointer;
+}
+.underline:hover{
+    color: rgb(154, 225, 227);
+    border-bottom:7px solid rgb(154, 225, 227);
+    transform:scale(1.05);
+
+
+}
+.info img{
+    border-radius:16px;
+    box-shadow:
+        0 0 15px rgba(255,255,255,0.25),
+        0 0 40px rgba(0,180,255,0.15);
+
+    filter: brightness(1.1) contrast(1.1);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.info img:hover{
+    transform: scale(1.05);
+
+    box-shadow:
+        0 0 25px rgba(255,255,255,0.4),
+        0 0 60px rgba(0,180,255,0.3);
+}
+
+.moon{
+    margin-top: 5px;
+}
+.info{
+    opacity:0;
+    transform:translateY(60px);
+    transition:all 0.8s ease;
+
+    max-width:75%;
+    margin:120px auto;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    gap:60px;
+}
+.info.show{
+    opacity:1;
+    transform:translateY(0);
+}
+.text{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.applyForm div{
+    margin:15px 0;
+}
+.applyForm input,
+.applyForm textarea{
+    font-family: "Orbitron", sans-serif;
+    font-weight: 600;
+    font-size: medium;
+    background-color: rgb(92, 120, 120);
+
+    width:320px;
+    padding:10px;
+
+    border-radius:8px;
+    border:none;
+
+    margin-top:6px;
+
+    
+}
+
+.applyForm{
+
+    background:rgba(0,0,0,0.65);
+
+    padding:40px 60px;
+
+    border-radius:16px;
+
+    backdrop-filter:blur(6px);
+
+    box-shadow:
+        0 0 20px rgba(255,255,255,0.15);
+
+}
+
+.footer{
+
+    margin-top:120px;
+    padding:60px 40px;
+
+    width:100%;
+
+    background:rgba(0,0,0,0.85);
+
+    border-top:1px solid rgba(255,255,255,0.15);
+
+}
+
+.footerContainer{
+
+    display:flex;
+    justify-content:space-around;
+    align-items:flex-start;
+
+    gap:40px;
+
+}
+
+.footer h3{
+    letter-spacing:3px;
+}
+
+.footer h4{
+    margin-bottom:10px;
+}
+
+.footer a{
+
+    display:block;
+    text-decoration:none;
+    color:aliceblue;
+
+    margin:6px 0;
+
+}
+
+.footer a:hover{
+
+    color:rgb(154,225,227);
+
+}
+
+.copyright{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    font-size:14px;
+
+    opacity:0.7;
+
+}
